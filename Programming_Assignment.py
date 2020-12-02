@@ -14,5 +14,5 @@ for i in range(1, 7):
 
 list_of_tuples = list(zip(studentid, subject, marks))
 df = pd.DataFrame(list_of_tuples, 
-                  columns = ['studentId', 'marks','subject'])
+                  columns = ['studentId', 'subject','marks'])
 df.to_csv("Marks.csv",index=False)
